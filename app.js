@@ -27,7 +27,7 @@ await collection.insertMany(
   orders.map((order) => {
     return {
       ...order,
-      created_at: new Date(order.created_at),
+      created_date: new Date(order.created_date),
     };
   })
 );
